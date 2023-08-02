@@ -3,12 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-ul{
+/* ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-}
+} */
 
 .d-flex{
     display: flex;
@@ -31,4 +31,55 @@ ul{
 .cart:hover{
     color: #febd69;
 }
+/* Footer */
+.footer1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
 
+}
+.footer2{
+    background-color: #222f3d;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+ }
+ ul{
+    margin-top: 20px;
+ }
+
+ul a:hover{
+    text-decoration: underline;
+}
+ul p:hover{
+    text-decoration: underline;
+}
+
+.footer4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.pages{
+      padding-top: 25px;
+}
+
+.copyright{
+     padding-top: 5px;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
