@@ -3,3 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.heart{
+    font-size: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+.heart:hover{
+    color: #febd69;
+}
+.cart{
+  font-size: 23px;
+
+}
+.cart:hover{
+    color: #febd69;
+}
+

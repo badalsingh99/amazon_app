@@ -53,7 +53,8 @@ const Products = ({ productData }: any) => {
                   alt="productImage"
                 />
               </Link>
-              <div className="w-12 h-24 absolute bottom-10 right-0 border-[1px] border-gray-400 bg-white rounded-md flex flex-col translate-x-20 group-hover:translate-x-0 transition-transform duration-300">
+              {/* <div className="d-flex w-12 h-24 absolute bottom-10 right-0 border-[1px] border-gray-400 bg-white rounded-md flex flex-col translate-x-20 group-hover:translate-x-0 transition-transform duration-300"> */}
+              <div className="d-flex">
                 <span
                   onClick={() =>
                     dispatch(
@@ -71,8 +72,7 @@ const Products = ({ productData }: any) => {
                       })
                     )
                   }
-                  className="w-full h-full border-b-[1px] border-b-gray-400 flex items-center justify-center text-xl bg-transparent hover:bg-amazon_yellow cursor-pointer duration-300"
-                >
+                  className="heart cart">
                   <HiShoppingCart />
                 </span>
                 <span
@@ -92,20 +92,25 @@ const Products = ({ productData }: any) => {
                       })
                     )
                   }
-                  className="w-full h-full border-b-[1px] border-b-gray-400 flex items-center justify-center text-xl bg-transparent hover:bg-amazon_yellow cursor-pointer duration-300"
-                >
-                  <FaHeart />
+                  className=" heart">
+                 <FaHeart />
+
                 </span>
               </div>
+               <hr />
+             
               {isNew && (
                 <p className="absolute top-0 right-0 text-amazon_blue font-medium text-xs tracking-wide animate-bounce">
                   !save <FormattedPrice amount={oldPrice - price} />
                 </p>
               )}
             </div>
-            <hr />
+       
             <div className="px-4 py-3 flex flex-col gap-1">
-              <p className="text-xs text-gray-500 tracking-wide">{category}</p>
+              <p className="text-xs text-gray-500 tracking-wide">
+                <br />
+                <br />
+                {category}</p>
               <p className="text-base font-medium">{title}</p>
               <p className="flex items-center gap-2">
                 <span className="text-sm line-through">
